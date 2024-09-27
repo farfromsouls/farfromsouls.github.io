@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(17, 17, 17);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+
+.h_text {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.h_text:hover {
+  transform: scale(1.3);
+}
