@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(15, 15, 15);
+    padding-left: 400px;
+    padding-right: 400px;
+    font-family: "Cascadia Mono", "Ubuntu Mono", "DejaVu Sans Mono", "Liberation Mono", "JetBrains Mono", "Fira Code", "Roboto Mono", "Courier New", Courier, sans-serif, system-ui;
+    font-size: 20px;
+    color: rgb(72, 147, 65);
+}
+
+summary {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+}
+
+.content {
+    color: rgb(80, 80, 80);
+    text-indent: 60px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+

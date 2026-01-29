@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <h1>my repos</h1>
+
+    <details>
+        <summary>SibSAUSchedule</summary>
+        <div class="content">
+            I started this project when I entered SibSAU. I had already made a bot that sent schedules when I was in school, so when I enrolled, the idea seemed obvious. Among the interesting parts, I'd like to highlight the difficulties with parsing the schedule (I really didn't want to resort to it, but after trying many options, something only started working when I used xpath). In this project, I'm particularly proud of how I built the notification system and, in general, organized the optimized logic for data collection for notifications.
+        </div>
+        <div class="images">
+            <img src="static/SibSAUSchedule.png">
+        </div>
+    </details>
+
+    <details>
+        <summary>TelegramChannelSuggestionBot</summary>
+        <div class="content">
+            I decided to create this bot because I saw many popular Telegram groups/channels that operated through a submission system (i.e., users first contacted a bot to submit information, and then, after admin approval, the post was published in the channel/group). I realized that while I understood the basics of bots, I had little idea how to implement such a system. Moreover, there was a clear demand for it, so I decided to start the project.
+
+            Everything here is kept as simple as possible. You can see a variety of database queries and a nicely implemented admin interface that requires minimal effort from admins when handling users.  
+        </div>
+    </details>
+
 </body>
 </html>
