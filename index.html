@@ -1,54 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>my repos</h1>
+  <div class="resume-card">
+    <div class="left-panel">
+      <div class="avatar">
+        <span>ЯК</span>
+      </div>
 
-    <details>
-        <summary>SibSAUSchedule</summary>
-        <div class="content">
-            I started this project when I entered SibSAU. I had already made a bot that sent schedules when I was in school, so when I enrolled, the idea seemed obvious. Among the interesting parts, I'd like to highlight the difficulties with parsing the schedule (I really didn't want to resort to it, but after trying many options, something only started working when I used xpath). In this project, I'm particularly proud of how I built the notification system and, in general, organized the optimized logic for data collection for notifications.
+      <ul class="contact-list">
+        <li><i class="fas fa-phone-alt"></i> +7 (913) 510 09 37</li>
+        <li><i class="fas fa-envelope"></i>farfromsouls@mail.ru</li>
+        <li><i class="fas fa-map-marker-alt"></i>Красноярск, Россия</li>
+      </ul>
+
+      <div class="social-links">
+        <a href="https://github.com/farfromsouls" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/ffsls" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+        <a href="https://pypi.org/user/farfromsouls/">PyPI</a> <br>
+        <a href="https://www.codewars.com/users/ffsls">CodeWars</a>
+      </div>
+
+      <div class="section-title">
+        <i class="fas fa-code"></i> Навыки
+      </div>
+      <div class="skills-wrap">
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Django</span>
+        <span class="skill-badge">PostgreSQL</span>
+        <span class="skill-badge">Git</span>
+        <span class="skill-badge">Docker</span>
+        <span class="skill-badge">HTML5/CSS3</span>
+        <span class="skill-badge">Redis</span>
+        <span class="skill-badge">С/С++/С#</span>
+      </div>
+
+      <div class="section-title">
+        <i class="fas fa-language"></i> Языки
+      </div>
+      <div class="lang-item">
+        <span>Русский</span>
+        <span>Родной</span>
+      </div>
+      <div class="lang-item">
+        <span>Английский</span>
+        <span>C1 (продвинутый)</span>
+      </div>
+
+      <div class="section-title">
+        <i class="fas fa-heart"></i> Интересы
+      </div>
+      <div class="interests-wrap">
+        <span class="interest-item">Чтение</span>
+        <span class="interest-item">Спорт</span>
+        <span class="interest-item">Музыка</span>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h1 class="name">Карапетьян Ян</h1>
+      <div class="profession">Junior python-разработчик</div>
+
+      <div class="profile-text">
+        Студент направления "Программная инженерия". Интересуюсь разработкой бэкенда на Python и в целом архитектурой приложений. Почти всё свободное время трачу на учёбу или проекты.
+        <br><a href="https://github.com/farfromsouls">github.com/farfromsouls</a>
+      </div>
+
+      <div class="right-title">
+        <i class="fas fa-briefcase"></i> Опыт работы
+      </div>
+
+      Без опыта
+
+      <div class="right-title">
+        <i class="fas fa-graduation-cap"></i> Образование
+      </div>
+
+      <div class="edu-item">
+        <h4>СибГУ им. М.Ф. Решетнёва</h4>
+        <div class="meta">
+          <span>2024 – 2028</span>
+          <span>Программная инженерия </span>
         </div>
-        <img src="static/SibSAUSchedule.png">
-    </details>
+        <div style="margin-top: 8px; color: #475569;">Бакалавр, в процессе обучения</div>
+      </div>
 
-    <details>
-        <summary>TelegramChannelSuggestionBot</summary>
-        <div class="content">
-            I decided to create this bot because I saw many popular Telegram groups/channels that operated through a submission system (i.e., users first contacted a bot to submit information, and then, after admin approval, the post was published in the channel/group). I realized that while I understood the basics of bots, I had little idea how to implement such a system. Moreover, there was a clear demand for it, so I decided to start the project.
+      <div class="right-title">
+        <i class="fas fa-certificate"></i> Деятельность (+проекты)
+      </div>
 
-            Everything here is kept as simple as possible. You can see a variety of database queries and a nicely implemented admin interface that requires minimal effort from admins when handling users.  
-        </div>
-        <img src="static/tgsuggestbot.png">
-    </details>
+      <div class="cert-item">
+        <h4>SibSAUSchedule <a href="https://github.com/farfromsouls/SibSAUSchedule">ссылка</a></h4>
+        <div class="meta">
+            <span>Телеграм бот (aiogram) парсер расписания СибГУ с возможностью рассылки.</span>
+      </div>
+        
+      <div class="cert-item">
+        <h4>python-backend-roadmap <a href="https://github.com/farfromsouls/python-backend-roadmap">ссылка</a></h4>
+        <div class="meta">
+            <span>Мини-проекты, с помощью которых я разбирался как, когда и зачем используется та, или иная backend технология.</span>
+      </div>
 
-    <details>
-        <summary>lf-crlf</summary>
-        <div class="content">
-            Once while programming, I ran into a git issue where I kept getting endless complaints about LF and CRLF line endings. It really annoyed me, so I decided to write a script that could quickly convert an entire file or directory to one consistent style. I also thought it would be nice to always have such a script on hand. For easy access, I decided to publish it as a PyPI library. What I made can hardly be called a full-fledged library, of course, but it was interesting to get acquainted with the publishing system for such projects.
-        </div>
-    </details>
+      <div class="cert-item">
+        <h4>TelegramChannelSuggestionBot <a href="https://github.com/farfromsouls/TelegramChannelSuggestionBot">ссылка</a></h4>
+        <div class="meta">
+            <span>Бот-предложка с админкой для удобного ведения telegram каналов</span>
+      </div>
 
-    <details>
-        <summary>PomoClicker</summary>
-        <div class="content">
-            At some point, I became interested in whether it was possible to come up with a Pomodoro timer that you'd actually feel motivated to start (beyond just the motivation to get work done). In my opinion, such a timer could really help people given the current "ADHD trends." I decided that a cool solution would be to use people's own ADHD against them. So I made a clicker game where you can only progress and upgrade if you're being productive with Pomodoro sessions. For this project, I used PyQt6.
-        </div>
-        <img src="static/pomoclicker.png">
-    </details>
+      <div class="cert-item">
+        <h4>SibSAU-courses <a href="https://github.com/farfromsouls/SibSAU-courses">ссылка</a></h4>
+        <div class="meta">
+            <span>База знаний и моих работ из СибГУ</span>
+      </div>
 
-    <details>
-        <summary>work-zone</summary>
-        <div class="content">
-            At some point, I started using the lofizen service while studying or working. I liked putting on various background noises and calm music, and I found it convenient to customize. But my options for actions were very limited on that site, and most interesting features (like a notepad for tasks and multiple sound options) were only available with a paid subscription. I decided I had to make my own version that would have everything I needed. This time, unlike with Pomoclicker, I decided to use tkinter.
-        </div>
-        <img src="static/workzone.png">
-    </details>
-
+    </div>
+  </div>
 </body>
 </html>
