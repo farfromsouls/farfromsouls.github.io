@@ -1,2 +1,2 @@
 # farfromsouls.github.io
-my blog
+my resume
