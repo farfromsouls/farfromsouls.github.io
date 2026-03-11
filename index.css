@@ -294,6 +294,7 @@ body {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .meta span {
   background: #eff2f7;
