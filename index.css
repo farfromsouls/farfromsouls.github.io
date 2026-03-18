@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #eef2f5;  
+  background: #eef2f5;
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
   color: #1e293b;
@@ -44,14 +44,9 @@ body {
   height: 130px;
   margin: 0 auto 22px auto;
   background-image: url("avatar.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 3rem;
-  font-weight: 600;
   box-shadow: 0 12px 24px -8px rgba(79, 70, 229, 0.4);
   border: 4px solid white;
   transition: transform 0.2s;
@@ -82,9 +77,10 @@ body {
 
 .social-links {
   display: flex;
-  gap: 18px;
+  gap: 12px;
   justify-content: center;
-  margin: 25px 0 30px 0;
+  flex-wrap: wrap;
+  margin: 25px 0 20px 0;
 }
 .social-links a {
   color: #4f46e5;
@@ -106,6 +102,28 @@ body {
   color: white;
   border-color: #4f46e5;
   transform: translateY(-3px);
+}
+
+.codewars-badge {
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+.codewars-badge a {
+  background: #f0f3fa;
+  padding: 6px 18px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #2d3c5e;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+  border: 1px solid #e0e7ff;
+  transition: all 0.2s;
+}
+.codewars-badge a:hover {
+  background: #4f46e5;
+  color: white;
+  border-color: #4f46e5;
 }
 
 .section-title {
@@ -215,6 +233,14 @@ body {
   border-radius: 20px;
   border-left: 4px solid #4f46e5;
 }
+.profile-text a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+.profile-text a:hover {
+  text-decoration: underline;
+}
 
 .right-title {
   font-weight: 600;
@@ -233,87 +259,103 @@ body {
   font-size: 1rem;
 }
 
-.job-item {
-  margin-bottom: 28px;
-}
-.job-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 5px;
-}
-.job-title {
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: #0f172a;
-}
-.company {
-  font-weight: 600;
-  color: #4f46e5;
-  margin: 2px 0 5px 0;
-}
-.date-badge {
-  background: #e9edf5;
-  padding: 4px 12px;
-  border-radius: 40px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #1e293b;
-}
-.job-description {
-  list-style: none;
-  margin-top: 8px;
-  padding-left: 6px;
-}
-.job-description li {
-  margin-bottom: 8px;
-  display: flex;
-  gap: 10px;
-  font-size: 0.95rem;
-  color: #334155;
-}
-.job-description li i {
-  color: #4f46e5;
-  font-size: 0.8rem;
-  margin-top: 4px;
-  width: 16px;
+.no-experience {
+  background: #f1f5f9;
+  padding: 15px 20px;
+  border-radius: 12px;
+  color: #475569;
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0 20px 0;
 }
 
 .edu-item, .cert-item {
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 }
 .edu-item h4, .cert-item h4 {
   font-weight: 600;
   font-size: 1.05rem;
   margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.cert-item h4 a {
+  font-size: 0.8rem;
+  background: #e0e7ff;
+  padding: 2px 10px;
+  border-radius: 30px;
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.15s;
+}
+.cert-item h4 a:hover {
+  background: #4f46e5;
+  color: white;
 }
 .edu-item .meta, .cert-item .meta {
   font-size: 0.9rem;
   color: #4b5565;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
 }
 .meta span {
   background: #eff2f7;
   padding: 2px 12px;
   border-radius: 50px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.tech-stack {
+  color: #2563eb;
+  font-style: italic;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+.project-list {
+  list-style: none;
+}
+.project-list li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #334155;
+  position: relative;
+  padding-left: 18px;
+}
+.project-list li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #4f46e5;
 }
 
-ol{
-    list-style: none;
+.books-section {
+  margin-top: 15px;
 }
-ol > li{
-    padding-left: 20px;
-    position: relative;
-    margin: 10px;
+.book-item {
+  margin-bottom: 20px;
+  border-left: 2px solid #e2e8f0;
+  padding-left: 18px;
 }
-ol > li:before{
-    content: '✔';
-    position: absolute; top: 0; left: 0;
-    color: blue;
+.book-item h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.book-author {
+  font-size: 0.85rem;
+  color: #4b5565;
+  background: #eff2f7;
+  padding: 2px 10px;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 4px 0 6px 0;
+}
+.book-note {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 750px) {
