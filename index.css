@@ -43,8 +43,8 @@ body {
   width: 130px;
   height: 130px;
   margin: 0 auto 22px auto;
-  background-image: url("avatar.jpg");
-  background-size: cover;
+  background-image: url("avatar.png");
+  background-size: 170%;
   background-position: center;
   border-radius: 50%;
   box-shadow: 0 12px 24px -8px rgba(79, 70, 229, 0.4);
