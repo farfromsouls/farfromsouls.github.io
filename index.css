@@ -119,6 +119,7 @@ body {
   display: inline-block;
   border: 1px solid #e0e7ff;
   transition: all 0.2s;
+  margin-bottom: 10px;
 }
 .codewars-badge a:hover {
   background: #4f46e5;
