@@ -311,12 +311,11 @@ body {
 .tech-stack {
   color: #2563eb;
   font-style: italic;
-  margin-top: 4px;
   font-size: 0.9rem;
+  white-space: nowrap;
+  display: inline; 
 }
-.project-list {
-  list-style: none;
-}
+
 .project-list li {
   margin-bottom: 6px;
   font-size: 0.95rem;
@@ -324,11 +323,16 @@ body {
   position: relative;
   padding-left: 18px;
 }
+
 .project-list li:before {
-  content: "▹ ";
+  content: "▹";
   position: absolute;
   left: 0;
   color: #4f46e5;
+}
+
+.project-list {
+  list-style: none;
 }
 
 .books-section {
@@ -373,11 +377,5 @@ body {
   }
   .right-panel {
     padding: 28px 24px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .job-header {
-    flex-direction: column;
-    gap: 5px;
   }
 }
