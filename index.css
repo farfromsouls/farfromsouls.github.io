@@ -309,11 +309,11 @@ body {
   margin-right: 8px;
 }
 .tech-stack {
-  color: #2563eb;
-  font-style: italic;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  display: inline; 
+  white-space: normal;        
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: inline-block;    
+  max-width: 100%;
 }
 
 .project-list li {
@@ -361,6 +361,25 @@ body {
   color: #475569;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.contact-list li,
+.profile-text a,
+.cert-item h4 a,
+.book-note,
+.project-list li {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.right-panel,
+.left-panel {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.resume-card {
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 750px) {
